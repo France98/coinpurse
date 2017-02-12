@@ -78,7 +78,7 @@ public class CoinUtil {
 			}
 		}
 		System.out.println(sum + " " + currency); 
-	}
+	} 
 	
 	/**
 	 * This method contains some code to test the above methods.

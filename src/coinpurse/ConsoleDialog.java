@@ -1,7 +1,7 @@
 package coinpurse;
  
 import java.util.Scanner;
-
+ 
 /** 
  * User Interface for the Coin Purse. 
  * This class provides simple interactive dialog for inserting
