@@ -78,7 +78,7 @@ public class Coin implements Comparable<Coin>{
     }
     
 /**
- * 
+ * return the sentence.
  */
     public String toString() { 
     	return this.value + "-" + this.currency; 

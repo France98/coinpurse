@@ -124,7 +124,6 @@ public class Purse {
 			return null;
 		}
 
-		
 		Coin[] array = new Coin [templist.size()];
 		templist.toArray(array);
 		return array;

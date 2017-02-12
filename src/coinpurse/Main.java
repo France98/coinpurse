@@ -6,17 +6,16 @@ package coinpurse;
  * @author Phanuwatch Luangpradit
  */
 public class Main {
-
+	
     /**
      * Configure and start the application.
      * @param args not used
      */
     public static void main( String[] args ) {
 //TODO follow the steps in the sequence diagram
-        // 1. create a Purse
-
-        // 2. create a ConsoleDialog with a reference to the Purse object
-
+        Purse purse = new Purse(4);
+        ConsoleDialog console = new ConsoleDialog(purse);
+        console.run();
         // 3. run the ConsoleDialog
 
     }
