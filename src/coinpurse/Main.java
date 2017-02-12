@@ -12,11 +12,9 @@ public class Main {
      * @param args not used
      */
     public static void main( String[] args ) {
-//TODO follow the steps in the sequence diagram
+
         Purse purse = new Purse(4);
         ConsoleDialog console = new ConsoleDialog(purse);
         console.run();
-        // 3. run the ConsoleDialog
-
     }
 }
