@@ -62,8 +62,9 @@ public class Coin implements Comparable<Coin>{
     	return false;
     }
     
-//TODO Write a compareTo method and implement Comparable.
-    
+    /**
+     * Order Coins by value so that the smaller value comes first.
+     */
     public int compareTo(Coin obj){
     	if(obj == null){
     		return -1;
