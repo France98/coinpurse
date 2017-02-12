@@ -21,8 +21,7 @@ public class PurseTest {
      * Called before every test case method.
      */
     @Before
-    public void setUp()
-    {
+    public void setUp(){
     }
 
     /** Easy test that the Purse constructor is working. */

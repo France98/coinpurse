@@ -18,8 +18,13 @@ public class CoinUtil {
 	 *     that have the requested currency.  
 	 */
 	public static List<Coin> filterByCurrency(final List<Coin> coinlist, String currency) {
-		
-		return null; // return a list of coin references copied from coinlist
+		List<Coin> filter = new ArrayList<>();
+		for(int i = 0;i < coinlist.size(); i++){
+			if(coinlist.get(i).getCurrency().equals(currency)){
+				filter.add(coinlist.get(i));
+			}
+		}
+		return filter;
 	}
 	
 
@@ -36,7 +41,13 @@ public class CoinUtil {
 	 * 2. Create a comparator instance and use it to sort the coins.
 	 */
 	public static void sortByCurrency(List<Coin> coins) {
-		
+		Collections.sort(coins, new Comparator<Coin>(){
+			@Override
+			public int compare(Coin c1, Coin c2) {
+				return c1.getCurrency().compareToIgnoreCase(c1.getCurrency());
+			}
+		});
+			
 	}
 	
 	/**
@@ -52,7 +63,21 @@ public class CoinUtil {
 	 * Hint: this is easy if you sort the coins by currency first. :-)
 	 */
 	public static void sumByCurrency(List<Coin> coins) {
-
+		sortByCurrency(coins);
+		String currency = coins.get(0).getCurrency();
+		double sum = 0.0;
+		for(int i = 0 ; i < coins.size(); i++){
+			if(currency.equalsIgnoreCase(coins.get(i).getCurrency())){
+				sum = sum + coins.get(i).getValue();
+			}
+			else{
+				System.out.println(sum + " " + currency);
+				sum = 0.0;
+				currency = coins.get(i).getCurrency();
+				sum = sum + coins.get(i).getValue();
+			}
+		}
+		System.out.println(sum + " " + currency); 
 	}
 	
 	/**
