@@ -13,7 +13,7 @@ public class Main {
      */
     public static void main( String[] args ) {
 
-        Purse purse = new Purse(4);
+        Purse purse = new Purse(20);
         ConsoleDialog console = new ConsoleDialog(purse);
         console.run();
     }
