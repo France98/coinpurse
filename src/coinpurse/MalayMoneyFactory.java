@@ -8,7 +8,7 @@ package coinpurse;
 public class MalayMoneyFactory extends MoneyFactory {
 
 	/**
-	 * Seperate coin and banknote.
+	 * Separated coin and banknote.
 	 * create the money.
 	 */
 	@Override

@@ -13,8 +13,7 @@ public class Coin extends AbstractValuable {
 
 	/**
 	 * A coin with given value using the default currency.
-	 * 
-	 * @param value
+	 * @param value of coin
 	 */
 	public Coin(double value) {
 		super(value);
@@ -22,9 +21,8 @@ public class Coin extends AbstractValuable {
 
 	/**
 	 * A coin with given value and currency.
-	 * 
-	 * @param value
-	 * @param currency
+	 * @param value of coin
+	 * @param currency of coin
 	 */
 	public Coin(double value, String currency) {
 		super(value, currency);
